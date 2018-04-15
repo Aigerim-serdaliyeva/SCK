@@ -240,17 +240,23 @@ body {
          }
       }
 
-      .form {
+      &-form {
          position: absolute;
          top: -80px;
          right: 0;
+         max-width: 262px;
          z-index: 1;
+         text-align: center;
+         flex-shrink: 0;
+         background-color: rgba(255, 243, 207, 0.8);
+
          .input-div {
             margin-bottom: 10px;
          }
-         &-info {
-            margin-bottom: 20px;
-         }
+
+         // &-info {
+         //    margin-bottom: 20px;
+         // }
       }
    }
 
