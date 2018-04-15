@@ -1,0 +1,246 @@
+@import './vars';
+
+@mixin circle($width) {
+	width: $width;
+	height: $width;
+	line-height: $width;	
+	text-align: center;
+	border-radius: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $text_color;
+    outline: none;
+    // font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+    .inverse & {
+        color: #fff;
+    }
+}
+
+input, button, textarea, a {
+    outline: none;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+.inverse {
+    color: #fff;
+}
+
+.accent {
+    color: $accent;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.text {
+    &-center {
+        text-align: center;
+    }
+    &-right {
+        text-align: right;
+    }
+}
+
+.hamburger {
+    display: none;
+    margin-left: 20px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.button {
+   display: inline-block;
+   text-decoration: none;
+   padding: 11px 7px;
+   width: 190px;
+   font-size: 16px;
+   font-weight: normal;
+   text-align: center;
+   color: #fff !important;
+   border: 0;
+   background-image: -moz-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,32,47) 100%);
+   background-image: -webkit-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,32,47) 100%);
+   background-image: -ms-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,32,47) 100%);
+   min-width: 165px;    
+   cursor: pointer;
+
+    &:hover {
+        color: #fff !important;
+    }    
+
+    &.button-yellow {
+        min-width: auto;
+        padding: 0 20px;
+        background-color: #e88232;
+        color: #fff !important;
+    }
+}
+
+.input, .textarea {
+    background: transparent;
+    color: #828181;
+    font-size: 14px;
+    line-height: inherit;
+    border: none;
+    background-color: #fff;
+    font-family: $default_family, sans-serif;
+    padding: 8.5px 35px;
+
+    .inverse & {
+        color: #fff;
+        border-color: #fff;
+
+        &::-webkit-input-placeholder {
+            color: #fff;
+        }
+        &::-moz-input-placeholder {
+            color: #fff;
+        }
+        &::-ms-input-placeholder {
+            color: #fff;
+        }
+    }
+
+    &-div {
+        position: relative;
+        
+        & .input {
+          width: 100%;  
+        }
+
+        & .error-message {
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+        }
+
+        .inverse & {
+            border-bottom-color: #fff;
+        }
+    }
+
+    &.error {
+		border-color: red;
+		color: red;
+
+		&+.error-message {
+			display: block;
+		}
+	}
+
+	&+.error-message {
+        display: none;
+        text-align: left;
+        color: red;
+        padding-left: 30px;
+	}
+
+	&::-webkit-input-placeholder {
+        color: #000;
+        font-weight: 300;
+		opacity: 1;
+	}
+	
+	&::-moz-placeholder {
+        color: #000;
+        font-weight: 300;
+		opacity: 1;
+	}
+	
+	&:-ms-input-placeholder {
+        color: #000;
+        font-weight: 300;
+		opacity: 1;
+	}
+	
+	&.error::-webkit-input-placeholder {
+		color: red;
+	}
+	
+	&.error::-moz-placeholder {
+		color: red;
+	}
+	
+	&.error:-ms-input-placeholder {
+		color: red;
+	}
+}
+
+.text {
+    &-phone {
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    &-center {
+        text-align: center;
+    }
+}
+
+.form {
+   max-width: 262px;
+   margin: 0 auto;
+   text-align: center;
+   flex-shrink: 0;
+   background-color: rgba(255, 243, 207, 0.8);
+   &-title {
+      font-weight: normal;
+      margin: 25px 0;
+      font-size: 24px;
+   }
+   &-info {
+      font-size: 10px;
+      // margin-bottom: 25px;
+   }
+
+   form {
+      width: 190px;
+      margin: 0 auto;
+   }
+   .input-div, .button {
+      border: none;
+      position: relative;
+      font-size: 16px;
+      img {
+         position: absolute;
+         top: 50%;
+         left: 3%;
+         transform: translateY(-70%);
+      }
+   }
+
+   .button {
+      margin-bottom: 20px;
+   }
+
+   &-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+   }
+}
