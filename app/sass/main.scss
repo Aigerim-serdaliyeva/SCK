@@ -481,31 +481,33 @@ body {
       background-size: auto;
       background-position: right top;
    }
+
+   .section-thanks {
+      padding: 200px 0 0 0;
+      flex-grow: 1;
+      text-align: left;
+   
+      &-content {
+         display: flex;
+         justify-content: space-between;         
+      }
+   
+      &-block {
+         max-width: 400px;
+      }
+   
+      &-text {
+         font-size: 24px;
+         margin: 25px 0 60px;
+      }
+   
+      &-link {
+         text-decoration: underline;
+      }
+   }
 }
 
-.section-thanks {
-   padding: 200px 0 0 0;
-   flex-grow: 1;
-   text-align: left;
 
-   &-content {
-      display: flex;
-      justify-content: space-between;         
-   }
-
-   &-block {
-      max-width: 400px;
-   }
-
-   &-text {
-      font-size: 24px;
-      margin: 25px 0 60px;
-   }
-
-   &-link {
-      text-decoration: underline;
-   }
-}
 
 .more {
    max-width: 845px;
