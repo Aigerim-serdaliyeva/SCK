@@ -204,28 +204,29 @@ body {
       background-image: url('../img/main-back.png');
       text-align: left;
       padding: 160px 0 220px 0;
+
       &-title {
          font-size: 32px;
          color: #fff;
          margin: 15px 270px 0px 0;
       }
+
       &-content {
          position: relative;
          display: flex;
          align-items: center;
       }
-      img {
-         // 
-         width: auto;
-      }
+
       &-list {
          max-width: 440px;
          list-style: none;
          padding: 0;
+
          li {
             position: relative;
             padding-left: 50px;
             margin-bottom: 23px;
+
             &::before {
                position: absolute;
                content: "";
@@ -251,7 +252,6 @@ body {
             margin-bottom: 20px;
          }
       }
-
    }
 
    &-provider {      
