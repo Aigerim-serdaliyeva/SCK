@@ -470,37 +470,42 @@ body {
    }
 }
 
-   .section-thanks {
-      padding: 160px 0 0 0;
-      &-content {
-         max-width: 950px;
-         display: flex;
-         justify-content: space-between;
-         margin: 0 auto;
-         .section-title {
-            text-align: left;
-            background: linear-gradient(left, rgb(53,55,121), rgb(201,41,47));
-            // background: linear-gradient(rgb(53,55,121), rgb(201,41,47));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
-            -o-text-fill-color: transparent;
-            -ms-text-fill-color: transparent;
-         }
-         .modal-text {
-            font-size: 24px;
-            text-align: left;
-         }
-         .button {
-            margin-top: 30px;
-         }
-         .thanks-link {
-            &:hover {
-               border-bottom: 1px solid #000;
-            }
-         }
-      }
-    }
+#thanks-page {
+   .header {
+      background: transparent;
+   }
+
+   .page-wrapper {
+      background-image: url('../img/thanks-back-top.png');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: right top;
+   }
+}
+
+.section-thanks {
+   padding: 200px 0 0 0;
+   flex-grow: 1;
+   text-align: left;
+
+   &-content {
+      display: flex;
+      justify-content: space-between;         
+   }
+
+   &-block {
+      max-width: 400px;
+   }
+
+   &-text {
+      font-size: 24px;
+      margin: 25px 0 60px;
+   }
+
+   &-link {
+      text-decoration: underline;
+   }
+}
 
 .more {
    max-width: 845px;

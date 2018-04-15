@@ -4,6 +4,14 @@
     display: none !important;
 }
 
+@media only screen and (max-width : 1790px) {
+   #thanks-page {
+      .page-wrapper {
+         background-position: left top;
+      }   
+   }
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
 
@@ -168,6 +176,30 @@
                margin-right: 0;
                margin-bottom: 20px;
             }
+         }
+      }
+   }
+
+   #thanks-page {
+      .page-wrapper {
+         background: transparent;
+      }
+
+      .header {
+         background: $accent;
+      }
+
+      .section-thanks {
+         padding: 130px 0 30px;
+         display: flex;
+         align-items: center;
+
+         &-img {
+            display: none;
+         }
+
+         &-text {
+            margin-bottom: 20px;
          }
       }
    }
