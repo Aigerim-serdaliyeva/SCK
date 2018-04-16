@@ -168,13 +168,12 @@
          &-form {
             display: flex;
          }
-         .form-block {           
+         .form {           
             form {
                display: block;
             }
             .input-div {
                margin-right: 0;
-               margin-bottom: 20px;
             }
          }
       }
@@ -289,13 +288,10 @@
             margin: 0 auto;
             max-width: 500px;
          }
-         .form-text {
+         &-text {
             margin-bottom: 20px;
          }
-         .form-block {        
-            form {
-               display: block;               
-            }
+         .form {        
             .button {
                width: 100%;
             }
@@ -325,7 +321,7 @@
       max-width: none;
          .input-div, .button {
             width: 100%;
-            margin: 0 0 30px;
+            margin: 0 0 10px;
          }
    }
 

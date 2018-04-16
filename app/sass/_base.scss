@@ -195,46 +195,25 @@ p {
 }
 
 .form {
-   margin: 0 auto;   
+  text-align: left;
 
-   &-title {
-      font-weight: normal;
-      margin: 25px 0;
-      font-size: 24px;
-   }
+  &-info {
+    font-size: 10px;
+  }
 
-   &-info {
-      font-size: 10px;
-      // margin-bottom: 25px;
-   }
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-   form {
-      width: 190px;
-      margin: 0 auto;
-   }
-   .input-div, .button {
-      border: none;
-      position: relative;
-      font-size: 16px;
-      img {
-         position: absolute;
-         top: 50%;
-         left: 3%;
-         transform: translateY(-70%);
-      }
-   }
+  .input-div {
+    margin-right: 30px;
+  }
 
-   .button {
-      margin-bottom: 20px;
-   }
-
-   &-content {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-   }
+  .input-div, .button {
+    margin-bottom: 10px;
+  }
 }
 
 

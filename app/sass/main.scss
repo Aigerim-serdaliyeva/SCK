@@ -460,30 +460,16 @@ body {
          text-align: left;
       }
 
-      .form-text {
-         .phone-block {
-            text-align: left;
+      &-text {
+         .text-phone {
             margin-top: 25px;
          }
       }
-      .form-block {
-         max-width: 660px;
-         margin: 0 auto;
-        
-         form {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-         }
-         
-         .input-div {
-           margin-right: 30px;
-         }
 
+      .form {
          .button {
             width: 239px;
          }
-
       }
    }
 }
