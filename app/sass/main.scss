@@ -424,14 +424,17 @@ body {
    }
 
    &-contact {
+      margin-top: -120px;
       background-image: url("../img/form-back.png");
       background-size: auto;
-      background-position: right bottom;
+      background-position: calc(50% + 366.5px) bottom;
+
       &-map {
          display: flex;
          justify-content: space-between;
          margin-bottom: 120px;
       }
+
       .map {
          width: 32%;
          position: relative;
@@ -450,11 +453,13 @@ body {
             }
          }
       }
+
       &-form {
          display: flex;
-      }
-      .form-text {
          text-align: left;
+      }
+
+      .form-text {
          .phone-block {
             text-align: left;
             margin-top: 25px;
@@ -469,27 +474,15 @@ body {
             justify-content: space-between;
             margin-bottom: 15px;
          }
+         
          .input-div {
-            position: relative;
-            margin-right: 30px;
-            input {
-               margin-bottom: 0;
-               padding: 10px 35px;
-            }
+           margin-right: 30px;
          }
-         .form-icon {
-            position: absolute;
-            top: 50%;
-            left: 3%;
-            transform: translateY(-50%);
-         }
+
          .button {
             width: 239px;
-            padding: 9px 7px;
          }
-         .form-info {
-            text-align: left;
-         }
+
       }
    }
 }
