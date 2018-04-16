@@ -8,6 +8,8 @@ $(document).ready(function() {
     var utms = parseGET();
     var headerHeight = 57;
     var $hamburger = $(".hamburger");
+    var sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]').remodal();
+    var $sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]');
 
     if(utms && Object.keys(utms).length > 0) {
         window.sessionStorage.setItem('utms', JSON.stringify(utms));
@@ -72,6 +74,13 @@ $(document).ready(function() {
         $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
     });
 
+    $(".appliances-link").click(function(e) {
+      e.preventDefault();
+      var title = $(this).data("title");
+      $sfer.find("[name=info]").val("Обсудить сотрудничество: " + title);
+      sfer.open();
+    })
+
     $("input[type=tel]").mask("+7 (999) 999 99 99", {
         completed: function() {
             $(this).removeClass('error');
@@ -102,7 +111,11 @@ $(document).ready(function() {
      }
 
     $(document).on('closing', '.remodal', function (e) {
-        $(".remodal .input").removeClass("error");
+      $(this).find(".input").removeClass("error");
+      var form = $(this).find("form");
+      if(form.length > 0) {
+        form[0].reset();
+      }
     });
 
     $(".ajax-submit").click(function(e) {

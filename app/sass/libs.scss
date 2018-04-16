@@ -69,40 +69,16 @@
     &-close {
         left: auto;
         right: 0;
+        color: $text_color;
+        &:before {
+          font-size: 35px;
+        }
     }
 
    &.remodal-small {
-      background-color: #f9f7f7;
-      // background-image: url("../img/zvonok-modal-back.png");
       max-width: 490px;
+      padding: 50px 25px;
    }
-
-  //  form {
-  //     max-width: 212px;
-  //     margin: 0 auto;
-  //  }
-
-  //   .form-title {
-  //       text-align: center;
-  //       font-size: 24px;
-  //       font-weight: bold;
-  //   }
-
-  //   .input-div, .button {
-  //       width: 100%;
-  //       margin-bottom: 10px;
-  //     position: relative;
-  //        img {
-  //           position: absolute;
-  //           top: 50%;
-  //           transform: translateY(-50%);
-  //           left: 3%;
-  //        }
-  //   }
-  //   .form-info {
-  //      text-align: center;
-  //   }
-
 }
 
 .hamburger {
