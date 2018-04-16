@@ -89,8 +89,8 @@ p {
    position: relative;
    display: inline-block;
    text-decoration: none;
-   padding: 12px 7px;
-   font-size: 16px;
+   padding: 13px 10px;
+   font-size: 14px;
    line-height: 1;
    font-weight: normal;
    text-align: center;
@@ -132,8 +132,8 @@ p {
     border: none;
     background-color: #fff;
     font-family: $default_family, sans-serif;
-    padding: 12px 20px 12px 35px;    
-
+    padding: 12px 20px 12px 35px;   
+  
     &.error {
 		border-color: red;
 		color: red;
@@ -208,7 +208,7 @@ p {
   }
 
   .input-div {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .input-div, .button {

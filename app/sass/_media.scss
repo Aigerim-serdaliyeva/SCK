@@ -202,6 +202,17 @@
          }
       }
    }
+
+
+}
+
+@media only screen and (max-width : 880px) { 
+  .more {
+    .form {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
 }
 
 /* Small Devices, Tablets */
@@ -300,20 +311,46 @@
       
    }
 
+   .more {
+     &-img {
+       margin-right: 30px;
+     }
+     .form {       
+        form {
+          margin: 0 auto;
+          max-width: 500px;
+          flex-direction: column;
+        }
+
+        &-info {
+          margin: 0 auto;
+          max-width: 500px;          
+        }
+
+        .input-div, .button {
+          max-width: none;
+          width: 100%;
+        }
+     }
+   }
+
 }
 
+@media only screen and (max-width : 640px) {
+  .more {
+    &-content {
+       flex-direction: column;         
+    }
 
+    &-img {
+      margin: 0 auto;
+   }
+ }
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
-   .more {
-      &-content {
-         flex-direction: column;
-         img {
-            margin: 0 auto;
-         }
-      }
-   }
+
 
 
    .form {

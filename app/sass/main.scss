@@ -514,58 +514,44 @@ body {
 
 
 .more {
-   max-width: 845px;
+   max-width: 880px;
    padding: 0;
+
    &-content {
       display: flex;
       align-items: flex-start;
-      // justify-content: space-between;
       padding: 35px 50px 35px 30px;
-      img {
-         margin-right: 30px;
-      }
-
    }
-   &-block {
 
+   &-img {
+     margin-right: 70px;
    }
+
    &-title {
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 10px;
    }
+
    &-trademarks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
       img {
          margin-right: 20px;
       }
    }
-   &-form {
+   .form {
       background-color: $accent;
-      form {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         margin-bottom: 10px;
-         padding: 10px 35px 0;
-         .input-div {
-            max-width: 160px;
-            position: relative;
-            margin: 0;
-            img {
-               position: absolute;
-               top: 50%;
-               transform: translateY(-50%);
-               left: 3%;
-            }
-         }
-         .button {
-            max-width: 248px;
-            font-size: 14px;
-            padding: 9px 7px;
-         }
+      padding: 10px 35px;
+
+      .input-div {
+        max-width: 160px;       
+        margin-right: 10px; 
       }
-      .form-info {
-         padding: 0 35px 10px;
+
+      .button {
+        white-space: nowrap;
       }
    }
 }
