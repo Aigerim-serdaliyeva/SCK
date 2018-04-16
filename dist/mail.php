@@ -3,8 +3,8 @@
 $method = $_SERVER['REQUEST_METHOD'];
 
 $project_name = "Evodream Holding";
-$admin_email  = "info@evodreamholding.com, client@marketing-time.kz";
-$server_mail = "<info@evodreamholding.com>";
+$admin_email  = "opt@sck-1.kz, client@marketing-time.kz";
+$server_mail = "<opt@sck-1.kz>";
 $form_subject = "Заявка";
 
 
@@ -36,3 +36,5 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
 mail($admin_email, adopt($form_subject), $message, $headers);
+
+header("Location: /thanks.html");
