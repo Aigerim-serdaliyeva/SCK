@@ -25,7 +25,7 @@
       margin-top: 0;
    }
 
-   .section {
+   .section {    
       &-trademarks {
          &-content {
             justify-content: center;
@@ -444,10 +444,25 @@
 			width: auto;
 			padding: 0;
 		}
-	}
+  }
+  
+  .section {
+    &-appliances {
+      background-image: url('../img/appliances-back.png');
+      background-size: auto;
+    }
+  }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	
+}
+
+@media only screen and (min-width : 1920px) {
+	.section {
+    &-appliances {
+      background-size: 100% 100%;
+    }
+  }
 }
