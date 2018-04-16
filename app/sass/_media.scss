@@ -131,8 +131,7 @@
             list-style: none;
             padding: 0;
          }   
-         .form {
-            top: 0;
+         &-form {
             position: static;
             margin: 0;
          }
@@ -365,18 +364,31 @@
          font-size: 25px;
          margin-bottom: 20px;
       }
+
       &-main {     
-         padding-bottom: 260px;
+         padding-bottom: 300px;
+
          &-title {
             text-align: center;
             font-size: 24px;
             margin-bottom: 10px;
-         }      
+         }    
+
          &-content {
             flex-direction: column;
             align-items: center;
          }
+
+         &-form {
+            padding: 15px;
+            width: 100%;
+
+            form {
+              width: 100%;
+            }
+         }
       }
+      
       &-supplys {
          &-content {
          }
