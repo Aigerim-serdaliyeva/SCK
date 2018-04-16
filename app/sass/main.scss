@@ -385,6 +385,8 @@ body {
    }
 
    &-trademarks {
+      margin-top: -70px;
+      z-index: 1;
       &-content {
          display: flex;
          flex-wrap: wrap;
@@ -403,19 +405,21 @@ body {
    }
 
    &-certificates {
+      margin-top: -100px;
       background-image: url('../img/certificate.png');
+      background-size: auto;
+      padding: 205px 0 155px;
+
+      .owl-item {
+        text-align: center;
+      }
 
       .certificate {
          border: 6px solid transparent;
          border-image: linear-gradient(to right, rgb(53,55,121), rgb(201,41,47));
          border-image-slice: 1;
-         height: 312px;
          overflow: hidden;
-         display: flex;
-         align-items: center;
-         img {
-            width: 100%;
-         }
+         display: inline-block;
       }
    }
 
