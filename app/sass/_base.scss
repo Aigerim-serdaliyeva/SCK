@@ -74,28 +74,20 @@ p {
    display: inline-block;
    text-decoration: none;
    padding: 11px 7px;
-   width: 190px;
    font-size: 16px;
    font-weight: normal;
    text-align: center;
    color: #fff !important;
    border: 0;
-   background-image: -moz-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,32,47) 100%);
-   background-image: -webkit-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,32,47) 100%);
-   background-image: -ms-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,32,47) 100%);
+   background-image: linear-gradient(6deg, rgb(53,55,121) 0%, rgb(201,32,47) 100%);
+   // background-image: -webkit-linear-gradient(6deg, rgb(53,55,121) 0%, rgb(201,32,47) 100%);
+   // background-image: -ms-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,32,47) 100%);
    min-width: 165px;    
    cursor: pointer;
 
-    &:hover {
-        color: #fff !important;
-    }    
-
-    &.button-yellow {
-        min-width: auto;
-        padding: 0 20px;
-        background-color: #e88232;
-        color: #fff !important;
-    }
+   &:hover {
+      color: #fff !important;
+   }    
 }
 
 .input, .textarea {
@@ -201,16 +193,14 @@ p {
 }
 
 .form {
-   max-width: 262px;
-   margin: 0 auto;
-   text-align: center;
-   flex-shrink: 0;
-   background-color: rgba(255, 243, 207, 0.8);
+   margin: 0 auto;   
+
    &-title {
       font-weight: normal;
       margin: 25px 0;
       font-size: 24px;
    }
+
    &-info {
       font-size: 10px;
       // margin-bottom: 25px;
@@ -244,3 +234,6 @@ p {
       margin-bottom: 20px;
    }
 }
+
+
+
