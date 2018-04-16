@@ -621,42 +621,4 @@ body {
    }
 }
 
-.remodal-footer {
-   text-align: left;
-   &.remodal-small {
-      // background-image: url("../img/remodal-back.png");
-      background-color: #f9f7f7;
-      max-width: 750px;
-   }
-   form {
-      max-width: 535px;
-      margin: 0 auto;
-   }
-   .form-footer {
-      display: flex;
-      justify-content: space-between;
-      height: 125px;
-      margin-bottom: 15px;
-      &-textarea {
-         width: 55%;
-         border: none;
-      }
-   }
-   .form-button {
-      display: flex;
-      justify-content: space-between;
-   }
-   .input-div, {
-         width: 100%;
-         margin-bottom: 10.2px;
-   }
-   .button {
-      max-width: 226px;
-   }
-
-   .button {
-         margin-bottom: 0;
-   }
-}
-
 @import './_media';
