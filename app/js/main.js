@@ -111,16 +111,14 @@ $(document).ready(function() {
      }
 
     $(document).on('closing', '.remodal', function (e) {
-      $(this).find(".input").removeClass("error");
+      $(this).find(".input, .textarea").removeClass("error");
       var form = $(this).find("form");
       if(form.length > 0) {
         form[0].reset();
       }
     });
 
-    $(".ajax-submit").click(function(e) {
-        e.preventDefault();
-        
+    $(".ajax-submit").click(function(e) {        
         var $form = $(this).closest('form');
         var $requireds = $form.find(':required');
         var formValid = true;
@@ -151,10 +149,8 @@ $(document).ready(function() {
                 data: data
             }).done(function() {                   
             });
-
-            $requireds.removeClass('error');
-            $form[0].reset();
-            window.location = "./thanks.html";
+        } else {
+          e.preventDefault();
         }
     });
 
