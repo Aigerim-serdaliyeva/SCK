@@ -200,7 +200,7 @@ body {
       &-title {
          font-size: 32px;
          color: #fff;
-         margin: 15px 270px 0px 0;
+         margin: 15px 270px 0 0;
       }
 
       &-content {
@@ -274,6 +274,7 @@ body {
          max-width: 850px;
          flex-wrap: wrap;
          justify-content: center;
+         align-items: center;
          margin: 0 auto;
       }
       .provider {
@@ -281,14 +282,13 @@ body {
          max-width: 180px;
          margin: 0 25px 50px;
          img {
-            margin-bottom: 30px;
-            &::before {
-               content: "";
-               border-bottom: 1px solid $accent;
-               position: absolute;
-               top: 0;
-               left: 0;
-            }
+            margin-bottom: 15px;
+         }
+         &-line {
+            border: 0.7px solid $accent;
+            width: 120px;
+            margin: 0 auto;
+            margin-bottom: 15px;
          }
       }
    }
@@ -440,7 +440,6 @@ body {
             font-size: 18px;
             padding: 7px 10px;
             text-align: left;
-            z-index: 98;
             left: 0;
             bottom: 20px;
             span {
@@ -585,7 +584,7 @@ body {
    &-content {
       display: flex;
       align-items: flex-start;
-      padding: 35px 50px 35px 30px;
+      padding: 35px 50px 35px 50px;
    }
 
    &-img {
