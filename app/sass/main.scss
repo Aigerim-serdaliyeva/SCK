@@ -170,11 +170,9 @@ body {
       }
 
       &.link:hover, &.active {
-         &::after {
-            background-image: -moz-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,41,47) 100%);
-            background-image: -webkit-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,41,47) 100%);
-            background-image: -ms-linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,41,47) 100%);
-         }
+        &::after {
+          @include gradient(); 
+        }
       }
    }
 }
@@ -241,22 +239,31 @@ body {
       }
 
       &-form {
-         position: absolute;
-         top: -80px;
-         right: 0;
-         max-width: 262px;
-         z-index: 1;
-         text-align: center;
-         flex-shrink: 0;
-         background-color: rgba(255, 243, 207, 0.8);
+        position: absolute;
+        top: -80px;
+        right: 0;
+        width: 262px;
+        text-align: center;
+        background-color: rgba(255, 243, 207, 0.8);
+        padding: 20px 10px;
 
-         .input-div {
-            margin-bottom: 10px;
-         }
+        &-title {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
 
-         // &-info {
-         //    margin-bottom: 20px;
-         // }
+        form {
+          width: 190px;
+          margin: 0 auto;
+        }
+
+        .input-div {
+          margin-bottom: 10px;
+        }
+
+        .button {
+          margin-bottom: 20px;
+        }
       }
    }
 
