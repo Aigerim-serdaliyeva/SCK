@@ -161,7 +161,7 @@
          }
          .map {
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
          }
          &-form {
             display: flex;
@@ -406,6 +406,29 @@
             &:nth-child(2), &:nth-child(4), &:nth-child(6) {
                background-color: $accent;
             }
+
+            &-link {
+              position: relative;
+              display: inline-block;
+              text-decoration: none;
+              padding: 13px 10px;
+              line-height: 1;
+              font-weight: normal;
+              text-align: center;
+              color: #fff !important;
+              border: 0;
+              min-width: 165px;
+              @include gradient();
+              cursor: pointer;
+
+              &:hover {
+                @include gradientHover();
+              }    
+
+              &:active {
+                top: 1px;
+              }
+            }
          }
       }
 
@@ -459,7 +482,30 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+  .section {
+    &-appliances {
+      .appliances {
+        &-link {
+          background: linear-gradient(rgb(53,55,121), rgb(201,41,47));
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+          -o-text-fill-color: transparent;
+          -ms-text-fill-color: transparent;
+          &::after {
+              content: "";
+              display: block;
+              height: 1px;
+          }
+          &:hover, &.active {
+              &::after {
+                background-image: linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,41,47) 100%);
+              }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets */

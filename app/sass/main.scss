@@ -353,23 +353,7 @@ body {
          }
 
          &-link {
-            font-size: 16px;
-            background: linear-gradient(rgb(53,55,121), rgb(201,41,47));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
-            -o-text-fill-color: transparent;
-            -ms-text-fill-color: transparent;
-            &::after {
-               content: "";
-               display: block;
-               height: 1px;
-            }
-            &:hover, &.active {
-               &::after {
-                  background-image: linear-gradient( 6deg, rgb(53,55,121) 0%, rgb(201,41,47) 100%);
-               }
-            }
+            font-size: 16px;            
          }
          &:nth-child(1), &:nth-child(3), &:nth-child(5) {
             background-color: #fff;
