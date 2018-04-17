@@ -2,7 +2,7 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-$project_name = "Evodream Holding";
+$project_name = "SCK (оптом)";
 $admin_email  = "opt@sck-1.kz, client@marketing-time.kz";
 $server_mail = "<opt@sck-1.kz>";
 $form_subject = "Заявка";

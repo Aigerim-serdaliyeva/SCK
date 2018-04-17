@@ -132,23 +132,19 @@ $(document).ready(function() {
             }
         });
 
-        var data = $form.serialize();
-
-        if(Object.keys(utms).length > 0) {
-            for(var key in utms) {
-                data += '&' + key + '=' + utms[key];
-            }
-        } else {
-            data += '&utm=Прямой переход'
-        } 
-
         if(formValid) {
-            $.ajax({
-                type: "POST",
-                url: "/mail.php",
-                data: data
-            }).done(function() {                   
-            });
+            
+            if(Object.keys(utms).length === 0) {
+              utms['utm'] = "Прямой переход";
+            } 
+
+            for(var key in utms) {
+              var input = document.createElement("input");
+              input.type = "hidden";
+              input.name = key;
+              input.value = utms[key];
+              $form[0].appendChild(input);
+            }
         } else {
           e.preventDefault();
         }
