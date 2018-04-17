@@ -271,7 +271,7 @@ body {
 
       &-content {
          display: flex;
-         max-width: 850px;
+         max-width: 860px;
          flex-wrap: wrap;
          justify-content: center;
          align-items: center;
@@ -285,10 +285,11 @@ body {
             margin-bottom: 15px;
          }
          &-line {
-            border: 1px solid $accent;
             width: 120px;
+            height: 1px;
             margin: 0 auto;
             margin-bottom: 15px;
+            @include gradient();
          }
       }
    }
