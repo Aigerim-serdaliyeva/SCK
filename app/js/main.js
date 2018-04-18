@@ -158,6 +158,8 @@ $(document).ready(function() {
       smartSpeed: 500,
       margin: 30,
       navText: ['', ''],
+      autoplay: true,
+      autoplayTimeout: 3000,
       responsive: {
          0: { items: 1, mouseDrag: false },
          480: { items: 2, mouseDrag: true },
