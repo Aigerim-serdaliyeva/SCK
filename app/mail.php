@@ -7,7 +7,6 @@ $admin_email  = "opt@sck-1.kz, client@marketing-time.kz";
 $server_mail = "<opt@sck-1.kz>";
 $form_subject = "Заявка";
 
-
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
