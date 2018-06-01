@@ -36,4 +36,10 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 
 mail($admin_email, adopt($form_subject), $message, $headers);
 
+/* 5CRM */
+include_once('FiveCrmClass.php');
+$client = new FiveCrmClass('dbd5313b-d0fd-4d54-9aaf-ff42c70840bf', 'https://opt.sck-1.kz', $_POST);
+$client->send();
+/* /5CRM */
+
 header("Location: /thanks.html");
