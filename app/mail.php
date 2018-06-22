@@ -1,4 +1,5 @@
 <?php
+if ($_POST['info']) {
 
 $method = $_SERVER['REQUEST_METHOD'];
 
@@ -43,3 +44,5 @@ $client->send();
 /* /5CRM */
 
 header("Location: /thanks.html");
+
+}
